@@ -1,0 +1,58 @@
+<header role="banner">    
+      <!-- Top Bar -->
+      <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+              <p class="text-size-12">Contact Us: 0324-4897133--0301-4665684 | <a class="text-orange-hover">alqadridawakhana@gmail.com</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="~/Home/Index" class="logo"><img src="~/images/logo-free.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="~/Home/Index">Home</a></li>
+                <li><a href="~/Home/about">About</a></li>
+              <li><a>Products</a>
+                <ul>
+                  <li><a href="~/Product/products">Men Health</a>
+                  </li>
+                  <li><a href="~/Product/Women">Women Health</a>
+
+                  </li>
+                    <li><a href="~/Product/General">General Product</a>
+
+                    </li>
+                </ul>
+              </li>
+              <li><a href="~/Home/contact">Contact</a></li>
+
+                @if(Session["name"] != null)
+                {
+                    <li><a href="~/Admin/logout">Logout</a></li>
+                    
+                }
+                else{
+                    <li><a href="~/Admin/lgin">Login</a></li>
+                }
+
+                @if(Session["name"] != null)
+                {
+                    <li><a href="~/Admin/index">Admin Panel</a></li>
+                    
+                }
+                
+            </ul> 
+          </div>
+        </div>
+      </nav>
+    </header>

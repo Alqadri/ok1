@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    string name=ViewBag.Name;
+    string Des=ViewBag.Des;
+    string type=ViewBag.type;
+    int ID = Int32.Parse(ViewBag.ID);
+    string image = ViewBag.img;
+}
+
+<h2>Edit</h2>
+
+
+<form action="/Admin/FUP" method="post" enctype="multipart/form-data">
+
+    <input type="number" value="@ID" name="ID" />
+    <input type="text" value="@name" name="name" />
+    <input type="text" value="@Des" name="Des" />
+    <input type="text" value="@type" name="type" />
+    <img src="@image" />
+    <input type="file" name="Img" />
+    <input type="submit" value="Change" />
+
+
+
+</form>

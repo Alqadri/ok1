@@ -1,0 +1,188 @@
+@model IEnumerable<AlQadriDawaKhana.Models.Slider>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlQadriDawakhana</title>
+    <link rel="stylesheet" href="~/Content/components.css">
+    <link rel="stylesheet" href="~/Content/responsee.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/owl.theme.css">
+    <link rel="stylesheet" href="~/Content/lightcase.css">
+    <link rel="stylesheet" href="~/Content/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="~/Scripts/modernizr.js"></script>
+    <script type="text/javascript" src="~/Scripts/responsee.js"></script>
+    <script type="text/javascript" src="~/Scripts/validation.js"></script> 
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+  <body class="size-1140">
+  @Html.Partial("/Views/Home/_header.cshtml");
+
+   <!-- MAIN -->
+   <!-- <main role="main"> -->
+      <!-- Main Carousel -->
+      <section class="section background-white">
+        <div class="line">
+          
+            <div class="carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-wide-arrows">
+                @foreach (var m in Model){ 
+                <div class="item">
+                  <div class="s-12 center">
+                    <!--<img src="~/images/01-boxed.jpg" alt="">-->
+                    <img src="@m.Path" alt="">
+                      <div class="carousel-content">
+                      <div class="padding-2x">
+                        <div class="s-12 m-12 l-8">
+                     
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>
+                    
+            </div>
+          }
+          </div>  
+        </div>
+      </section>
+      
+      <!-- Section 1 -->
+      <section class="section background-white"> 
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src="~/images/img-01.jpg" alt="">
+              <h2 class="text-thin">Asthma</h2>
+              <p>Asthma causes difficulty in breathing. This disease is caused in the airways of lungs 
+                  where usually swelling or narrowing take place,
+                   leading to wheezing, shortness of breath, chest tightness, and coughing.</p> 
+              <a class="text-more-info text-primary-hover" href="~/Home_page/Asthma">Read more</a>                
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src="~/images/img-02.jpg" alt="">
+              <h2 class="text-thin">Bowl Syndrome</h2>
+              <p>If you are struggling hard to control your IBS then you will be happy to know 
+                  about some natural remedies and herbs that are thought to be helpful in 
+                  digestive problems. If compared with traditional a</p> 
+              <a class="text-more-info text-primary-hover" href="~/Home_page/Bowl">Read more</a>                
+            </div>
+            <div class="s-12 m-12 l-4 margin-m-bottom">
+              <img class="margin-bottom" src="~/images/img-03.jpg" alt="">
+              <h2 class="text-thin">Stomach Disorder</h2>
+              <p>Health is a big concern nowadays, especially when it comes to stomach. 
+                  No one is safe from stomach issues. Everyone faces it at least once. 
+                  Stomach troubles also affect your food and as a result it de</p> 
+              <a class="text-more-info text-primary-hover" href="~/Home_page/Stomach">Read more</a>                
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 2 -->
+      <section class="section background-primary text-center">
+        <div class="line">
+          <div class="s-12 m-10 l-8 center">
+            <h2 class="headline text-thin text-s-size-30">OUR PHILOSOPHY</h2>
+            <p class="text-size-20">"The person who takes medicine must recover twice, once from the disease and once from the medicine"</p>
+          </div>
+        </div>  
+      </section>
+      
+      <!-- Section 3 -->
+     <section class="section background-white">
+        <div class="full-width text-center">
+          <img class="center margin-bottom-30" style="margin-top: -210px;" src="~/images/bio.png" alt=""> 
+        </div>  
+      </section> 
+           <hr class="break margin-top-bottom-0">
+      
+      <!-- Section 4 --> 
+      <section class="section background-white">
+        <div class="line">
+          <h2 class="text-thin headline text-center text-s-size-30 margin-bottom-50">From Our <span class="text-primary">Blog</span></h2>
+          <div class="carousel-default owl-carousel carousel-wide-arrows">
+            <div class="item"> 
+              <div class="margin"> 
+                <div class="s-12 m-12 l-6">
+                  <div class="image-border-radius margin-m-bottom">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <a class="image-hover-zoom" href="~/Home_page/Female"><img src="~/images/blog-04.jpg" alt=""></a>
+                      </div>
+                      <div class="s-12 m-12 l-8 margin-m-bottom">
+                        <h3><a class="text-dark text-primary-hover" href="~/Home_page/Female"><b>Female Sex Problems</b></a></h3>
+                        <p>We are providing natural remedies and alternate medicine Treatments for all the female sex problems...</p>
+                        <a class="text-more-info text-primary-hover" href="~/Home_page/Female">Read more</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <div class="s-12 m-12 l-6">
+                  <div class="image-border-radius">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <a class="image-hover-zoom" href="~/Home_page/Ere_Dys"><img src="~/images/blog-02.jpg" alt=""></a>
+                      </div>
+                      <div class="s-12 m-12 l-8">
+                        <h3><a class="text-dark text-primary-hover" href="~/Home_page/Ere_Dys"><b>Erectile Dysfunction</b></a></h3>
+                        <p>You have to comprehend that Erectile Dysfunction can be treated by natural health products & is prevalent among men of all ages...</p>
+                        <a class="text-more-info text-primary-hover" href="~/Home_page/Ere_Dys">Read more</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="margin"> 
+                <div class="s-12 m-12 l-6">
+                  <div class="image-border-radius margin-m-bottom">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <a class="image-hover-zoom" href="~/Home_page/pre_er"><img src="~/images/blog-01.jpg" alt=""></a>
+                      </div>
+                      <div class="s-12 m-12 l-8 margin-m-bottom">
+                        <h3><a class="text-dark text-primary-hover" href="~/Home_page/pre_er"><b>Premature Ejaculation</b></a></h3>
+                        <p>Premature Ejaculation is one of the most general sexual problems faced by men today. Alternative medicine is designated...</p>
+                        <a class="text-more-info text-primary-hover" href="~/Home_page/pre_er">Read more</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <div class="s-12 m-12 l-6">
+                  <div class="image-border-radius">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <a class="image-hover-zoom" href="~/Home_page/male_inf"><img src="~/images/blog-03.jpg" alt=""></a>
+                      </div>
+                      <div class="s-12 m-12 l-8">
+                        <h3><a class="text-dark text-primary-hover" href="~/Home_page/male_inf"><b>Male Infertility</b></a></h3>
+                        <p>Male infertility or the incapacity for a man to have child is on the mount in India. Natural remedies for this situation..</p>
+                        <a class="text-more-info text-primary-hover" href="~/Home_page/male_inf">Read more</a>
+                      </div>
+                    </div>  
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>    
+      </section>
+      
+   <!-- </main> -->
+    
+    <!-- FOOTER -->
+  @Html.Partial("/Views/Home/_footer.cshtml"); 
+   
+    <script type="text/javascript" src="~/Scripts/owl.carousel.js"></script>        
+    <script type="text/javascript" src="~/Scripts/template-scripts.js"></script>     
+   </body>
+</html>
